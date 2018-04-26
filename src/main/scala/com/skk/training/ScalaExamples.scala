@@ -28,5 +28,7 @@ list, it has two of them. Curried definitions allow a nicer syntax when
 calling the function, but are otherwise semantically equivalent to singleparameter
 list definitions.
 */
-def check[T](xs: Seq[T])(pred: T => Boolean): Boolean = try{ xs forall pred} catch{ case ex: Exception => false }
+def check[T](xs: Seq[T])(pred: T => Boolean): Boolean = try{ xs 
+                                                            forall pred} catch{ 
+  case ex: Exception => false }
 }
